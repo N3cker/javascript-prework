@@ -26,7 +26,7 @@ let argPlayerMove = getMoveName(playerInput);
 function displayResult(argComputerMove, argPlayerMove){
     console.log('moves:', argComputerMove, argPlayerMove);
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-
+    
     if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
         printMessage('Ty wygrywasz!');
     }else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
@@ -49,3 +49,4 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Wybierz poprawną liczbę!');
     }
 }
+displayResult(argComputerMove, argPlayerMove)
